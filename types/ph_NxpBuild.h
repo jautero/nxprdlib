@@ -42,8 +42,8 @@
 
 /* BAL components */
 
-//#define NXPBUILD__PHBAL_REG_STUB                /**< Stub BAL definition */
-#define NXPBUILD__PHBAL_REG_RPISPI              /**< Raspberry Pi BAL definition */
+#define NXPBUILD__PHBAL_REG_STUB                /**< Stub BAL definition */
+//#define NXPBUILD__PHBAL_REG_RPISPI              /**< Raspberry Pi BAL definition */
 //#define NXPBUILD__PH_OSAL_STUB                /**< Stub BAL definition */
 /* Commenting as this BAL would be available only for LPC platform */
 //#define NXPBUILD__PHBAL_REG_LPC1768SPI          /**< Lpc17xx BAL definition */
@@ -179,10 +179,12 @@
 
 /* OSAL components */
 //#define  NXPBUILD__PH_OSAL_LPC17XX                  /**< Software OSAL for LPC17xx */
-#define NXPBUILD__PH_OSAL_GLIB						 /**< GLIB based OSAL */
+//#define NXPBUILD__PH_OSAL_GLIB						 /**< GLIB based OSAL */
+#define NXPBUILD__PH_OSAL_STUB
 
 #if defined (NXPBUILD__PH_OSAL_LPC17XX) || \
-	defined (NXPBUILD__PH_OSAL_GLIB)
+	defined (NXPBUILD__PH_OSAL_GLIB) || \
+  defined (NXPBUILD__PH_OSAL_STUB)
     #define NXPBUILD__PH_OSAL                           /**< Generic OSAL definition */
 #endif
 

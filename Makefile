@@ -63,7 +63,7 @@ SOURCES = ./comps/phacDiscLoop/src/phacDiscLoop.c \
 ./comps/phpalFelica/src/Sw/phpalFelica_Sw.c \
 ./comps/phpalI14443p3a/src/phpalI14443p3a.c \
 ./comps/phpalI14443p3a/src/Sw/phpalI14443p3a_Sw.c \
-./comps/phpalI14443p3b/src/phpalI14443p3a_Sw<43p3b.c \
+./comps/phpalI14443p3b/src/phpalI14443p3b.c \
 ./comps/phpalI14443p3b/src/Sw/phpalI14443p3b_Sw.c \
 ./comps/phpalI14443p4/src/phpalI14443p4.c \
 ./comps/phpalI14443p4/src/Sw/phpalI14443p4_Sw.c \

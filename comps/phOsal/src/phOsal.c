@@ -159,7 +159,7 @@ phStatus_t phOsal_Timer_Create( void        *pDataParams,
 
 #ifdef NXPBUILD__PH_OSAL_STUB
     case PH_OSAL_STUB_ID:
-        status = phOsal_Stub_Timer_Init((phOsal_Stub_DataParams_t*)pDataParams, pTimerId);
+        status = phOsal_Stub_Timer_Create((phOsal_Stub_DataParams_t*)pDataParams, pTimerId);
         break;
 #endif /* NXPBUILD__PH_OSAL_STUB */
 
